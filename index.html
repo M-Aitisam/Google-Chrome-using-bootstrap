@@ -147,9 +147,9 @@
 
     <!-- Main Layout -->
     <div class="container-fluid ">
-        <div class="row">
+        <div class="row ">
             <!-- Sidebar -->
-            <div class="col-lg-2 sidebar pt-3">
+            <div class="col-lg-2 sidebar pt-3 ">
                 <ul class="nav flex-column">
                     <!-- Home -->
                     <li class="nav-item">
@@ -179,10 +179,12 @@
                     <!-- Enrolled -->
                     <li class="nav-item">
                         <span class="d-flex align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                class="bi bi-person-check" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-mortarboard" viewBox="0 0 16 16">
                                 <path
-                                    d="M15.854 5.854a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0-.146.354v3.5a.5.5 0 0 0 .5.5H13v2.5a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5V12h2.5a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.146-.354l-3-3zM12.5 11h-1v4h-1V11H9v2.5a.5.5 0 0 0 .5.5h2.5v-2.5a.5.5 0 0 0-.5-.5h-2V11zm.5-5.5a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm-1 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                <path
+                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
                             </svg>
                             <a class="nav-link ms-2" href="#">Enrolled</a>
                         </span>
@@ -190,7 +192,7 @@
                     <!-- To do -->
                     <li class="nav-item">
                         <span class="d-flex align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                                 class="bi bi-list-check" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M8.854 5.146a.5.5 0 1 1 .707.707l-2 2a.5.5 0 0 1-.707 0l-.646-.647a.5.5 0 1 1 .707-.707l.292.293 1.646-1.646zm0 5.708a.5.5 0 1 1 .707.707l-2 2a.5.5 0 0 1-.707 0l-.646-.647a.5.5 0 1 1 .707-.707l.292.293 1.646-1.646z" />
@@ -200,13 +202,40 @@
                             <a class="nav-link ms-2" href="#">To do</a>
                         </span>
                     </li>
+                    <li class="nav-item">
+                        <span class="d-flex align-items-center">
+                            <div class="d-flex justify-content-center text-center align-items-center "
+                                style=" background-color:#1967D2;width: 30px; height: 30px; border-radius: 50%; "><span
+                                    class="text-white " style="font-weight: bold;">A</span></div>
+                            <a class="nav-link ms-2" href="#">Calculus</a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="d-flex align-items-center">
+                            <div class="d-flex justify-content-center text-center align-items-center "
+                                style=" background-color:#C26401;width: 30px; height: 30px; border-radius: 50%; "><span
+                                    class="text-white " style="font-weight: bold;">S</span></div>
+                            <a class="nav-link ms-2" href="#">Software Enginnering</a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="d-flex align-items-center">
+                            <div class="d-flex justify-content-center text-center align-items-center "
+                                style=" background-color:#d2d45f;width: 30px; height: 30px; border-radius: 50%; "><span
+                                    class="text-white " style="font-weight: bold;">D</span></div>
+                            <a class="nav-link ms-2" href="#">DSA</a>
+                        </span>
+                    </li>
+                    <div>
+                        <hr>
+                    </div>
                     <!-- Archived Classes -->
                     <li class="nav-item">
                         <span class="d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-archive" viewBox="0 0 16 16">
                                 <path
-                                    d="M12.643 6H3.357c-.12 0-.214.096-.232.215l-.723 5.076A1 1 0 0 0 3.386 12h9.229a1 1 0 0 0 .984-.71l.723-5.076a.233.233 0 0 0-.232-.214h-1.447l.285-2.03A1 1 0 0 0 11.215 2H4.785a1 1 0 0 0-.99.96l.284 2.03H2.643zM4.785 3a.5.5 0 0 1 .497.43l.286 2.04h5.857l.286-2.04A.5.5 0 0 1 11.215 3H4.785zM1 6.5V5a1 1 0 0 1 1-1h1.785v2.5H1zm9 3v2.5H5V9.5h5zm0-1v-2H5v2h5z" />
+                                    d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
                             </svg>
                             <a class="nav-link ms-2" href="#">Archived Classes</a>
                         </span>
@@ -214,10 +243,12 @@
                     <!-- Settings -->
                     <li class="nav-item">
                         <span class="d-flex align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height=26" fill="currentColor"
                                 class="bi bi-gear" viewBox="0 0 16 16">
                                 <path
-                                    d="M8.165 3.127c-.476-.018-.952-.017-1.428 0-.278.016-.527.231-.576.507a5.5 5.5 0 0 0 .165 6.588c.048.276.298.491.576.507.476.017.952.017 1.428 0 .278-.016.527-.231.576-.507a5.5 5.5 0 0 0-.165-6.588c-.048-.276-.298-.491-.576-.507zm-1.344 6.92a.25.25 0 0 1-.36-.236 4.5 4.5 0 1 1 .405-4.293.25.25 0 0 1 .263.247 6.02 6.02 0 0 0 .653 4.05.25.25 0 0 1-.326.232 4.016 4.016 0 0 0-.635-.586zm5.09-.638a.25.25 0 0 0-.36.236 4.5 4.5 0 1 0 .405 4.293.25.25 0 0 0 .263-.247 6.02 6.02 0 0 1 .653-4.05.25.25 0 0 0-.326-.232 4.016 4.016 0 0 1-.635.586z" />
+                                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                                <path
+                                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
                             </svg>
                             <a class="nav-link ms-2" href="#">Settings</a>
                         </span>
@@ -226,8 +257,40 @@
             </div>
 
             <!-- Main Content -->
+
             <div class="col-lg-10 pt-3">
+
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid" style="border-bottom: 1px solid rgb(206, 206, 206);">
+                        <div class="d-flex " style="gap: 2rem;">
+                            <div style="border-bottom: 4px solid  #377ad7;; padding: 0 0.2rem 1rem 1rem;  ">
+                                <a class="navbar-brand " style="color: #377ad7;">Stream</a>
+                            </div>
+                            <div>
+                                <a class="navbar-brand">Classroom</a>
+                            </div>
+                            <div>
+                                <a class="navbar-brand">People</a>
+                            </div>
+                        </div>
+                       
+                        <div style=" display: flex;  gap:0.5rem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="21" fill="currentColor"
+                                class="bi bi-calendar" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="21" fill="currentColor"
+                                class="bi bi-boxes" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
+                            </svg>
+                        </div>
+                    </div>
+                </nav>
+              
                 <div class="row" style="padding-left: 3rem;">
+
                     <div class="col-lg-11">
                         <!-- Class Header -->
                         <div class="stream-section mb-4"
@@ -243,64 +306,81 @@
 
 
                         <!-- Stream Posts -->
-                        <div class="d-flex col-lg-12">
-                            <div style="margin-right:1px ">
-                                <div class="col-lg-11  ">
-                                    <div class="container">
-                                        <h5>Upcoming</h5>
-                                        <p>Woohoo, no work due soon!</p>
-                                       
-                                        <a href="#" class="btn btn-link " padding="margin-left:1rem;">View all</a>
-                                    </div>
+                        <div class="row">
+                            <!-- Left section: Upcoming -->
+                            <div class="col-lg-3 col-md-12 mb-3">
+                                <div class="container p-3">
+                                    <h5>Upcoming</h5>
+                                    <p>Woohoo, no work due soon!</p>
+                                    <a href="#" class="btn btn-link">View all</a>
+                                </div>
 
-                                    <div class="stream-post">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <img src="./images/lamborgani.jfif" alt="Profile">
-                                            <div class="ms-3">
-                                                <h6 class="mb-0">Aitisam Ahmed</h6>
-                                                <small>12 Sept</small>
-                                            </div>
+                                <div class="stream-post p-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./images/lamborgani.jfif" alt="Profile"
+                                            class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
+                                        <div class="ms-3">
+                                            <h6 class="mb-0">Aitisam Ahmed</h6>
+                                            <small>12 Sept</small>
                                         </div>
-                                        <p>Posted Course Instructor Profile</p>
+                                    </div>
+                                    <p>Posted Course Instructor Profile</p>
+                                </div>
+                            </div>
+
+                            <!-- Right section: Announcements and Posts -->
+                            <div class="col-lg-9 col-md-12">
+                                <!-- Post 1 -->
+                                <div class="stream-post p-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/lamborgani.jfif" alt="Profile"
+                                            class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
+                                        <div class="ms-3">
+                                            <h6 class="mb-0">Announce something to the class</h6>
+                                        </div>
                                     </div>
                                 </div>
 
-                            </div>
-                            <div class="col-lg-9">
-                                <div class="stream-post ">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="./images/lamborgani.jfif" alt="Profile">
+                                <!-- Post 2 -->
+                                <div class="stream-post p-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/lamborgani.jfif" alt="Profile"
+                                            class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
                                         <div class="ms-3">
-                                            <h6 class="mb-0">Aitisam Ahmed</h6>
+                                            <p class="mb-1">Posted a new material: Week 3: Lecture 4. Software Process
+                                                Models</p>
                                             <small>29 Sept</small>
                                         </div>
                                     </div>
-                                    <p>Posted a new material: Week 3: Lecture 4. Software Process Models</p>
                                 </div>
 
-                                <div class="stream-post">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="./images/lamborgani.jfif" alt="Profile">
+                                <!-- Post 3 -->
+                                <div class="stream-post p-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/lamborgani.jfif" alt="Profile"
+                                            class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
                                         <div class="ms-3">
-                                            <h6 class="mb-0">Aitisam Ahmed</h6>
+                                            <p class="mb-1">Posted a new material: Week 2: Introduction to Software
+                                                Engineering</p>
                                             <small>24 Sept</small>
                                         </div>
                                     </div>
-                                    <p>Posted a new material: Week 2: Introduction to Software Engineering</p>
                                 </div>
 
-                                <div class="stream-post">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="./images/lamborgani.jfif" alt="Profile">
+                                <!-- Post 4 -->
+                                <div class="stream-post p-3">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/lamborgani.jfif" alt="Profile"
+                                            class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
                                         <div class="ms-3">
-                                            <h6 class="mb-0">Aitisam Ahmed</h6>
+                                            <p class="mb-1">Posted a new material: Week 1: Intro to Course</p>
                                             <small>24 Sept</small>
                                         </div>
                                     </div>
-                                    <p>Posted a new material: Week 1: Intro to Course</p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
