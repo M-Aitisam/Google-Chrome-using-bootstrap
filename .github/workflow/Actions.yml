@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Trigger on push to main branch
+  push:
+    branches: ["main"]
+  # Allow manual triggering
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history for all branches and tags
+          fetch-depth: 0
+
+      # Step 2: Set up Node.js (optional for future use)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      # Step 3: Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      # Step 4: Upload the entire repository as artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Deploy everything in the root directory
+          path: './'
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
